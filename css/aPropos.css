@@ -1,0 +1,383 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: justify-all;
+}
+
+header {
+	background: linear-gradient(to right, #564f4a, #9d9991);	
+	height: 80px;
+}
+
+.left{float: left;}
+.right{float: right;}
+
+.page {
+	font-size: 46px;
+	color: white;
+	text-transform: uppercase;
+	line-height: 80px;
+	font-weight: 600;
+	font-family: Courier new;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+}
+
+.menu .title {
+	display: inline-block;
+	float: left;
+	position: relative;
+	padding: 25px 10px;
+}
+
+.menu .title a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.menu .title:hover {
+	background-color: #787272;
+	height: 30px;
+}
+
+.menu .sous_menu {
+	visibility: hidden;
+	display: block;
+	position: absolute;
+	box-shadow: 0 2px 3px rgba(34,36,38,.15);
+	border: 1px solid rgba(34,36,38,.15);
+	border-radius: 0 0 5px 5px;
+}
+
+
+.menu .sous_menu li {
+	padding: 0;
+	display: inline-block;
+	float: left;
+	width: 200px;
+	padding: 5px;
+	background: linear-gradient(to right, #564f4a, #9d9991);
+}
+
+.menu .title:hover .sous_menu {
+	visibility: visible;
+	height: auto;
+	overflow: hidden;
+	z-index: 2;							/*Pour être au-dessus de la bannière*/
+}
+
+.menu .sous_menu li a {
+	text-transform: uppercase;
+	padding: 0 0 0 5px;
+	color: white;
+	font-weight: normal;
+	font-size: 16px;
+	height: 0;
+	left: 0;
+	top: 70px;
+	border-left: 3px solid #8f8f8f;
+}
+
+
+.presentation {
+	color: white;
+	background: linear-gradient(to right, #564f4a, #9d9991);
+	margin-left: 25%;
+	margin-top: 5%;
+	width: 50%;
+	border: 2px solid #8f8f8f;
+	border-radius: 3%;
+	max-height: 600px;
+	overflow: hidden;
+}
+
+.maquette{	
+	color: white;
+	background: linear-gradient(to right, #564f4a, #9d9991);
+	margin-left: 25%;
+	margin-top: 5%;
+	width: 50%;
+	border: 2px solid #8f8f8f;
+	border-radius: 3%;
+	max-height: 600px;
+	overflow: hidden;
+}
+
+.description {
+	display: block;
+	padding: 3%;
+
+}
+
+.maquette1, .maquette2, .maquette3, .maquette4 {
+	width: 22%;
+	height: 440px;
+	border-radius: 5%;
+	margin: 1%;
+}
+
+.HeyNow{
+	color: white;	
+	background: linear-gradient(to right, #564f4a, #9d9991);
+	margin-left: 25%;
+	margin-top: 5%;
+	width: 50%;
+	border: 2px solid #8f8f8f;
+	border-radius: 3%;
+	overflow: hidden;
+}
+
+.fond {
+	display: block;
+	background-image: url("../images/aPropos/fond.jpg");
+	background-size: contain;
+
+}
+
+footer {
+	display: flex;
+	background: linear-gradient(to right, #9d9991,#564f4a);
+}
+
+.pFin {
+	color: lightgrey;
+	width: 100%;
+	padding: 1%;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: lightgrey;
+}
+
+
+@media all and (max-width: 1024px) {
+ 	.left {
+ 		margin-left: 8%;
+ 		margin-right: 6%;
+ 	}
+ 	.right {
+ 		float: none;
+ 	}
+
+ 	.page {
+ 		font-size: 34px;
+ 		line-height: 60px;
+ 	}
+
+ 	header {
+ 		height: 60px;
+ 	}
+
+ 	.container {
+ 		width: 100%;
+ 	}
+
+ 	.menu .title {
+ 		padding: 18px 6px;
+ 	}
+
+ 	.menu .title a {
+ 		font-size: 16px;
+ 	}
+
+ 	.menu .title:hover {
+ 		height: 24px;
+ 	}
+
+ 	.menu .sous_menu li {
+ 		width: 120px;
+ 	}
+
+ 	.menu .sous_menu li a {
+ 		font-size: 13px;
+ 	}
+
+ 	.banniere {
+ 		height: 350px;
+ 	}
+
+ 	.fondPresentation {
+ 		height: 350px;
+ 	}
+
+ 	.presentation {
+ 		top: 230px;
+ 		font-size: 14px;
+ 	}
+
+	.maquette {
+ 		top: 230px;
+ 		font-size: 14px;
+ 	}
+
+	.HeyNow {
+ 		top: 230px;
+ 		font-size: 14px;
+ 	}
+
+ 	.maquette1, .maquette2, .maquette3, .maquette4 {
+		width: 35%;
+		height: 400px;
+		border-radius: 5%;
+		margin-left: 8%;
+	}
+	
+}
+
+@media all and (max-width: 880px) {
+  	.left {
+ 		margin-left: 10%;
+ 		margin-right: 8%;
+ 	}
+
+ 	.right {
+ 		float: none;
+ 	}
+
+ 	.page {
+ 		font-size: 24px;
+ 		line-height: 50px;
+ 	}
+
+ 	header {
+ 		height: 50px;
+ 	}
+
+ 	.container {
+ 		width: 100%;
+ 	}
+
+ 	.menu .title {
+ 		padding: 15px 6px;
+ 	}
+
+ 	.menu .title a {
+ 		font-size: 14px;
+ 	}
+
+ 	.menu .title:hover {
+ 		height: 20px;
+ 	}
+
+ 	.menu .sous_menu li {
+ 		width: 110px;
+ 	}
+
+ 	.menu .sous_menu li a {
+ 		font-size: 12px;
+ 	}
+
+ 	.banniere {
+ 		height: 300px;
+ 	}
+
+ 	.fondPresentation {
+ 		height: 300px;
+ 	}
+
+ 	.presentation {
+ 		top: 170px;
+ 		font-size: 12px;
+ 	}
+	.maquette {
+ 		top: 170px;
+ 		font-size: 12px;
+ 	}
+	.HeyNow {
+ 		top: 170px;
+ 		font-size: 12px;
+ 	}
+}
+
+@media all and (max-width: 780px) {
+  	.left {
+ 		margin-left: 4%;
+ 		margin-right: 8%;
+ 	}
+
+ 	.maquette1, .maquette2, .maquette3, .maquette4 {
+		height: 350px;
+  	}
+}
+
+@media all and (max-width: 730px) {
+  	.left {
+ 		margin-left: 2%;
+ 		margin-right: 6%;
+ 	}
+}
+
+@media all and (max-width: 700px) {
+  	body{
+  		min-width: 550px;
+  	}
+
+  	.left {
+ 		display: none;
+ 	}
+
+ 	.right {
+ 		margin-left: 10%;
+ 	}
+
+ 	.banniere {
+ 		height: 200px;
+ 	}
+
+ 	.fondPresentation {
+ 		height: 200px;
+ 	}
+
+ 	footer {
+ 		font-size: 10px;
+ 	}
+
+ 	.presentation {
+ 		top: 70px;
+ 		font-size: 10px;
+ 		max-height: 375px;
+ 		min-width: 340px;
+ 	}
+	.maquette {
+ 		top: 70px;
+ 		font-size: 10px;
+ 		max-height: 375px;
+ 		min-width: 340px;
+ 	}
+	.HeyNow {
+ 		top: 70px;
+ 		font-size: 10px;
+ 		min-width: 340px;
+ 	}
+}
+
+@media all and (max-width: 600px) {
+	.presentation{
+		  margin-left: 20%;
+	  }
+
+	.maquette{
+		margin-left: 20%;
+	}
+
+	.maquette1, .maquette2, .maquette3, .maquette4 {
+		height: 320px;
+  	}
+
+	.HeyNow{
+		  margin-left: 20%;
+	}
+}

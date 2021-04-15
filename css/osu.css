@@ -1,0 +1,420 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: justify-all;
+}
+
+header {
+	background: linear-gradient(to right,#D9168C,#ff00f6);	
+	height: 80px;
+}
+
+.left{
+	float: left;
+	margin-left: 1%;
+}
+.right{
+	float: right;
+	margin-right: 1%;
+}
+
+.page {
+	font-size: 46px;
+	color: white;
+	text-transform: uppercase;
+	line-height: 80px;
+	font-weight: 600;
+	font-family: Courier new;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+}
+
+.menu .title {
+	display: inline-block;
+	float: left;
+	position: relative;
+	padding: 25px 10px;
+}
+
+.menu .title a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.menu .title:hover {
+	background-color: #d63ab7;
+	height: 30px;
+}
+
+.menu .sous_menu {
+	visibility: hidden;
+	display: block;
+	position: absolute;
+	box-shadow: 0 2px 3px rgba(34,36,38,.15);
+	border: 1px solid rgba(34,36,38,.15);
+	border-radius: 0 0 5px 5px;
+}
+
+
+.menu .sous_menu li {
+	padding: 0;
+	display: inline-block;
+	float: left;
+	width: 180px;
+	padding: 5px;
+	background: linear-gradient(to right,#D9168C,#ff00f6);	
+}
+
+.menu .title:hover .sous_menu {
+	visibility: visible;
+	height: auto;
+	overflow: hidden;
+	z-index: 2;							/*Pour être au-dessus de la bannière*/
+}
+
+.menu .sous_menu li a {
+	text-transform: uppercase;
+	padding: 0 0 0 5px;
+	color: white;
+	font-weight: normal;
+	font-size: 16px;
+	height: 0;
+	left: 0;
+	top: 70px;
+	border-left: 3px solid #ed21c5;
+}
+
+.banniere {
+	display: block;
+	width: 100%;
+	height: 400px;
+}
+
+
+.fondPresentation {
+	width: 100%;
+	height: 400px;
+	display: block;
+}
+
+.presentation {
+	background: linear-gradient(to right,#D9168C,#ff00f6);
+	position: absolute;
+	margin-left: 25%;
+	top: 250px;
+	width: 50%;
+	border: 2px solid #cc10a7;
+	border-radius: 3%;
+	max-height: 600px;
+	overflow: hidden;
+	color: white;
+}
+
+.description {
+	padding: 3%;
+}
+
+
+.gameplay {
+	border: 2px solid #cc10a7;
+	display: block;
+	background-image: url("../images/OSU/logo.png");
+	height: 80%;
+}
+
+.imgJeu1, .imgJeu3 {
+	float: left;
+	margin-left: 5%;
+	margin-top: 20px;
+	border-radius: 5%;
+}
+
+.imgJeu1 {
+	width: 35%;
+	height: 230px;
+}
+
+.pGameplay1 {
+	color: white;
+	padding: 2%;
+	background: linear-gradient(to right,#D9168C,#ff00f6);
+	border: 2px solid #cc10a7;
+	border-radius: 2%;
+	margin-left: 45%;
+	margin-right: 5%;
+	overflow: hidden;
+}
+
+.pGameplay1 {
+	height: 120px;
+	margin-top: 50px;
+	max-width: 480px;
+}
+
+.imgJeu2 {
+	float : right;
+	width: 34%;
+	height: 220px;
+	border-radius: 8%;
+	margin-right: 5%;
+	margin-top: 20px;
+}
+
+.pGameplay2 {
+	color: white;
+	padding: 2%;
+	background: linear-gradient(to right,#D9168C,#ff00f6);
+	border: 2px solid #cc10a7;
+	border-radius: 2%;
+	width: 46%;
+	max-width: 500px;
+	margin-left: 10%;
+	margin-top: 3%;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.imgJeu3 {
+	width: 35%;
+	height: 200px;
+}
+
+.pGameplay3 {
+	color: white;
+	width: 38%;
+	padding: 2%;
+	background: linear-gradient(to right,#D9168C,#ff00f6);
+	border: 2px solid #cc10a7;
+	border-radius: 2%;
+	margin-left: 45%;
+	margin-right: 5%;
+	margin-top: 3%;
+	margin-bottom: 50px;
+}
+
+footer {
+	display: flex;
+	background: linear-gradient(to right, #ff00f6,#D9168C);	
+}
+
+.pFin {
+	color: lightgrey;
+	width: 100%;
+	padding: 1%;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: lightgrey;
+}
+
+
+ @media all and (max-width: 1024px) {
+ 	.left {
+ 		margin-left: 8%;
+ 		margin-right: 6%;
+ 	}
+
+ 	.right {
+ 		float: none;
+ 	}
+
+ 	.page {
+ 		font-size: 34px;
+ 		line-height: 60px;
+ 	}
+
+ 	header {
+ 		height: 60px;
+ 	}
+
+ 	.container {
+ 		width: 100%;
+ 	}
+
+ 	.menu .title {
+ 		padding: 18px 6px;
+ 	}
+
+ 	.menu .title a {
+ 		font-size: 16px;
+ 	}
+
+ 	.menu .title:hover {
+ 		height: 24px;
+ 	}
+
+ 	.menu .sous_menu li {
+ 		width: 120px;
+ 	}
+
+ 	.menu .sous_menu li a {
+ 		font-size: 13px;
+ 	}
+
+ 	.banniere {
+ 		height: 350px;
+ 	}
+
+ 	.fondPresentation {
+ 		height: 350px;
+ 	}
+
+ 	.presentation {
+ 		top: 180px;
+ 		font-size: 14px;
+ 		max-height: 550px;
+ 	}
+
+ 	.imgJeu1, .imgJeu2, .imgJeu3, .pGameplay1, .pGameplay2, .pGameplay3 {
+ 		float: none;
+ 	}
+
+ 	.imgJeu1, .imgJeu2, .imgJeu3 {
+ 		margin-left: 25%;
+ 		width: 50%;
+ 		height: 250px;
+ 	}
+
+ 	.pGameplay1, .pGameplay2, .pGameplay3 {
+ 		margin-left: 20%;
+ 		width: 55%;
+ 	}
+
+ 	.pGameplay1 {
+ 		margin-top: 15px;
+ 	}
+ }
+
+  @media all and (max-width: 880px) {
+  	.left {
+ 		margin-left: 10%;
+ 		margin-right: 8%;
+ 	}
+
+ 	.right {
+ 		float: none;
+ 	}
+
+ 	.page {
+ 		font-size: 24px;
+ 		line-height: 50px;
+ 	}
+
+ 	header {
+ 		height: 50px;
+ 	}
+
+ 	.container {
+ 		width: 100%;
+ 	}
+
+ 	.menu .title {
+ 		padding: 15px 6px;
+ 	}
+
+ 	.menu .title a {
+ 		font-size: 14px;
+ 	}
+
+ 	.menu .title:hover {
+ 		height: 20px;
+ 	}
+
+ 	.menu .sous_menu li {
+ 		width: 110px;
+ 	}
+
+ 	.menu .sous_menu li a {
+ 		font-size: 12px;
+ 	}
+
+ 	.banniere {
+ 		height: 300px;
+ 	}
+
+ 	.fondPresentation {
+ 		height: 300px;
+ 	}
+
+ 	.presentation {
+ 		top: 110px;
+ 		font-size: 12px;
+ 		max-height: 520px;
+ 	}
+
+ 	.pGameplay1, .pGameplay2, .pGameplay3 {
+ 		font-size: 14px;
+ 	}
+  }
+
+  @media all and (max-width: 780px) {
+  	.left {
+ 		margin-left: 4%;
+ 		margin-right: 8%;
+ 	}
+  }
+
+  @media all and (max-width: 730px) {
+  	.left {
+ 		margin-left: 2%;
+ 		margin-right: 6%;
+ 	}
+  }
+
+  @media all and (max-width: 700px) {
+  	body{
+  		min-width: 550px;
+  	}
+
+  	.left {
+ 		display: none;
+ 	}
+
+ 	.right {
+ 		margin-left: 10%;
+ 	}
+
+ 	.banniere {
+ 		height: 200px;
+ 	}
+
+ 	.fondPresentation {
+ 		height: 200px;
+ 	}
+
+ 	footer {
+ 		font-size: 10px;
+ 	}
+
+ 	.presentation {
+ 		top: 65px;
+ 		font-size: 10px;
+ 		max-height: 375px;
+ 		min-width: 340px;
+ 	}
+
+ 	.imgJeu1, .imgJeu2, .imgJeu3 {
+ 		margin-left: 30%;
+ 		width: 45%;
+ 		height: 200px;
+ 	}
+
+ 	.pGameplay1, .pGameplay2, .pGameplay3 {
+ 		margin-left: 18%;
+ 		width: 62%;
+ 		font-size: 13px;
+ 	}
+  }
