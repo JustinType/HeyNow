@@ -1,4 +1,4 @@
-<h1 align="center">HeyNow</h1>
+<h1 align="center">🎶 HeyNow 🎶</h1>
 
 <hr>
 
