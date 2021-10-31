@@ -10,5 +10,5 @@
 
 <hr>
 
-<h4 align="left">I left it online to remember where I started years ago. It's in French, and the title of the website is a reference to Shrek <a href="https://youtu.be/L_jWHffIx5E?t=37" target="_blank"> <img src="https://www.pngall.com/wp-content/uploads/2/Shrek-PNG-Transparent-HD-Photo.png" alt="Shrek" width="80" height="80"/> </a> </h4>
+<h4 align="left">I left it online to remember where I started years ago. It's in French, and the title of the website is a reference to Shrek <a href="https://youtu.be/L_jWHffIx5E?t=37" target="_blank"> <img src="https://www.pngall.com/wp-content/uploads/2/Shrek-PNG-Transparent-HD-Photo.png" alt="Shrek" width="50" height="50"/> </a> </h4>
 <h4 align="left">Link : <a href="https://heynow.netlify.app/" target="_blank">HeyNow</a> </h4>
